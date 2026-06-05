@@ -34,6 +34,12 @@ body{
   margin:auto;
 }
 
+.logo img{
+  height:48px;
+  width:auto;
+  display:block;
+}
+
 /* =========================
    NAVBAR
    ========================= */
@@ -316,8 +322,3 @@ footer h3{
     grid-template-columns:1fr;
   }
 
-.logo img{
-  height:48px;
-  width:auto;
-  display:block;
-}}
