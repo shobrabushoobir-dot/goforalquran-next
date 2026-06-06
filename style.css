@@ -35,7 +35,7 @@ body{
 }
 
 .logo img{
-  height:270px;
+  height:85px;
   width:auto;
   display:block;
 }
@@ -79,6 +79,17 @@ nav a{
 
 nav a:hover{
   color:var(--primary);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 8%;
+    background: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 /* =========================
