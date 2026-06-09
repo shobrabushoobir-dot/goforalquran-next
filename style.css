@@ -963,9 +963,9 @@ blockquote{
     transform:translateY(-3px);
 }
 
-/* ==================================================
-   QUOTE BOX
-================================================== */
+/* =========================
+QUOTE BOX
+========================= */
 
 .quote-box{
 
@@ -975,8 +975,6 @@ blockquote{
     #0F4C5C,
     #145E70);
 
-    color:white;
-
     padding:60px;
 
     border-radius:30px;
@@ -984,18 +982,30 @@ blockquote{
     text-align:center;
 
     margin:100px 0;
-}
 
+    color:white;
+}
 
 .quote-box p{
 
-    color:white;
+    color:white !important;
 
-    font-size:24px;
+    font-size:28px;
+
+    line-height:1.9;
 
     font-style:italic;
 
-    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.quote-box span{
+
+    color:rgba(255,255,255,.8);
+
+    font-size:16px;
+
+    font-weight:500;
 }
 
 /* ==================================================
