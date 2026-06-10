@@ -1324,4 +1324,96 @@ QUOTE BOX
         flex-wrap:wrap;
     }
 
+   /* =========================
+PAGE HERO
+========================= */
+
+.page-hero{
+padding:120px 0 80px;
+background:#f8fafc;
+text-align:center;
+}
+
+.page-hero h1{
+font-size:60px;
+margin:20px 0;
+}
+
+.page-hero p{
+max-width:800px;
+margin:auto;
+color:#64748b;
+}
+
+
+/* =========================
+FEATURED ARTICLE
+========================= */
+
+.featured-article{
+padding:100px 0;
+}
+
+.featured-box{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+}
+
+.featured-image img{
+width:100%;
+border-radius:30px;
+}
+
+.featured-content h2{
+font-size:42px;
+margin:25px 0;
+}
+
+
+/* =========================
+CATEGORIES
+========================= */
+
+.categories{
+padding-bottom:60px;
+}
+
+.category-list{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+.category-list a{
+background:#f8fafc;
+padding:15px 25px;
+border-radius:50px;
+text-decoration:none;
+color:#0F4C5C;
+font-weight:600;
+}
+
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:768px){
+
+.featured-box{
+grid-template-columns:1fr;
+}
+
+.page-hero h1{
+font-size:40px;
+}
+
+.featured-content h2{
+font-size:32px;
+}
+
+}
 }
