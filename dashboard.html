@@ -1,0 +1,986 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>
+
+Dashboard | Go For Al-Qur'an
+
+</title>
+
+<link rel="preconnect"
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+href="https://fonts.gstatic.com"
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+
+font-family:'Inter',sans-serif;
+
+background:#F8FAFC;
+
+color:#1E293B;
+}
+
+a{
+text-decoration:none;
+}
+
+.dashboard{
+
+display:flex;
+
+min-height:100vh;
+}
+
+
+/* =========================
+SIDEBAR
+========================= */
+
+.sidebar{
+
+width:280px;
+
+background:white;
+
+padding:40px 30px;
+
+border-right:1px solid #E2E8F0;
+
+position:fixed;
+
+top:0;
+bottom:0;
+left:0;
+}
+
+.dashboard-logo{
+
+height:90px;
+
+display:block;
+
+margin:auto;
+}
+
+.sidebar h3{
+
+text-align:center;
+
+margin-top:15px;
+margin-bottom:50px;
+
+color:#0F4C5C;
+}
+
+.sidebar a{
+
+display:block;
+
+padding:18px 22px;
+
+margin-bottom:15px;
+
+border-radius:18px;
+
+color:#475569;
+
+font-weight:600;
+
+transition:.3s;
+}
+
+.sidebar a:hover{
+
+background:#EEF7F8;
+
+color:#0F4C5C;
+}
+
+.active{
+
+background:#0F4C5C !important;
+
+color:white !important;
+}
+
+
+/* =========================
+MAIN CONTENT
+========================= */
+
+.main-content{
+
+flex:1;
+
+margin-left:280px;
+
+padding:50px;
+}
+
+
+/* =========================
+WELCOME BOX
+========================= */
+
+.welcome-box{
+
+background:
+
+linear-gradient(
+135deg,
+#0F4C5C,
+#17677B);
+
+padding:60px;
+
+border-radius:35px;
+
+color:white;
+
+margin-bottom:40px;
+}
+
+.welcome-box h1{
+
+font-size:46px;
+
+margin-bottom:20px;
+}
+
+.welcome-box p{
+
+font-size:18px;
+
+line-height:1.8;
+}
+
+
+/* =========================
+RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+.sidebar{
+
+display:none;
+}
+
+.main-content{
+
+margin-left:0;
+
+padding:30px;
+}
+
+.welcome-box h1{
+
+font-size:36px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+
+<div class="dashboard">
+
+
+<!-- SIDEBAR -->
+
+<aside class="sidebar">
+
+<img
+src="logo.png"
+class="dashboard-logo">
+
+<h3>
+
+GO FOR AL-QUR'AN
+
+</h3>
+
+
+<a href="#"
+class="active">
+
+🏠 Dashboard
+
+</a>
+
+
+<a href="#">
+
+📖 Program Saya
+
+</a>
+
+
+<a href="#">
+
+📅 Event
+
+</a>
+
+
+<a href="#">
+
+🏆 Sertifikat
+
+</a>
+
+
+<a href="#">
+
+👤 Profil
+
+</a>
+
+
+<a href="#">
+
+⚙ Pengaturan
+
+</a>
+
+
+<a href="#">
+
+🚪 Keluar
+
+</a>
+
+</aside>
+
+
+
+<!-- MAIN -->
+
+<main class="main-content">
+
+
+<section class="welcome-box">
+
+<h1>
+
+Assalamu'alaikum, Ahmad 👋
+
+</h1>
+
+<p>
+
+Selamat datang kembali.
+
+Semoga Allah memberkahi perjalanan ilmu dan menjadikan kita termasuk ahli Al-Qur'an.
+
+</p>
+
+</section>
+
+  <!-- STATISTIK -->
+
+<section class="stats-section">
+
+<div class="stats-grid">
+
+<div class="stat-card">
+
+<h2>
+
+3
+
+</h2>
+
+<p>
+
+Program Diikuti
+
+</p>
+
+</div>
+
+
+<div class="stat-card">
+
+<h2>
+
+25
+
+</h2>
+
+<p>
+
+Materi Selesai
+
+</p>
+
+</div>
+
+
+<div class="stat-card">
+
+<h2>
+
+8
+
+</h2>
+
+<p>
+
+Pertemuan
+
+</p>
+
+</div>
+
+
+<div class="stat-card">
+
+<h2>
+
+85%
+
+</h2>
+
+<p>
+
+Progress Belajar
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- TARGET HAFALAN -->
+
+<section class="dashboard-section">
+
+<h2>
+
+🎯 Target Hafalan
+
+</h2>
+
+<div class="course-card">
+
+<h3>
+
+Juz 30
+
+</h3>
+
+<p>
+
+Target saat ini:
+
+An-Naba' → An-Nas
+
+</p>
+
+<br>
+
+<div class="progress-bar">
+
+<div class="progress-fill"
+style="width:65%;">
+
+</div>
+
+</div>
+
+<br>
+
+<p>
+
+65% Tercapai
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- PROGRAM AKTIF -->
+
+<section class="dashboard-section">
+
+<h2>
+
+📖 Program Saya
+
+</h2>
+
+
+<div class="course-grid">
+
+
+<div class="course-card">
+
+<h3>
+
+Tahsin Dasar
+
+</h3>
+
+<p>
+
+Progress Pembelajaran
+
+</p>
+
+<br>
+
+<div class="progress-bar">
+
+<div class="progress-fill"
+style="width:80%;">
+
+</div>
+
+</div>
+
+<br>
+
+<p>
+
+80% Selesai
+
+</p>
+
+<br>
+
+<a href="#">
+
+Lanjut Belajar →
+
+</a>
+
+</div>
+
+
+
+<div class="course-card">
+
+<h3>
+
+Tahfizh Al-Qur'an
+
+</h3>
+
+<p>
+
+Progress Pembelajaran
+
+</p>
+
+<br>
+
+<div class="progress-bar">
+
+<div class="progress-fill"
+style="width:45%;">
+
+</div>
+
+</div>
+
+<br>
+
+<p>
+
+45% Selesai
+
+</p>
+
+<br>
+
+<a href="#">
+
+Lanjut Belajar →
+
+</a>
+
+</div>
+
+
+
+<div class="course-card">
+
+<h3>
+
+Bahasa Arab
+
+</h3>
+
+<p>
+
+Progress Pembelajaran
+
+</p>
+
+<br>
+
+<div class="progress-bar">
+
+<div class="progress-fill"
+style="width:20%;">
+
+</div>
+
+</div>
+
+<br>
+
+<p>
+
+20% Selesai
+
+</p>
+
+<br>
+
+<a href="#">
+
+Lanjut Belajar →
+
+</a>
+
+</div>
+
+
+</div>
+
+</section>
+
+  <!-- EVENT TERBARU -->
+
+<section class="dashboard-section">
+
+<h2>
+
+📅 Event Terbaru
+
+</h2>
+
+<div class="event-card">
+
+<div>
+
+<h3>
+
+Kajian Tematik Al-Qur'an
+
+</h3>
+
+<p>
+
+Sabtu, 20 Juni 2026
+
+<br>
+
+19.30 WIB
+
+</p>
+
+</div>
+
+<a href="#">
+
+Lihat Detail →
+
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- PENGUMUMAN -->
+
+<section class="dashboard-section">
+
+<h2>
+
+📢 Pengumuman
+
+</h2>
+
+<div class="announcement-card">
+
+<h3>
+
+Kelas Tahsin Lanjutan Segera Dimulai
+
+</h3>
+
+<p>
+
+InsyaAllah kelas Tahsin Lanjutan akan dibuka pekan depan. Persiapkan diri dan jangan lupa muraja'ah materi sebelumnya.
+
+</p>
+
+</div>
+
+</section>
+
+
+
+<!-- AKTIVITAS TERBARU -->
+
+<section class="dashboard-section">
+
+<h2>
+
+🕒 Aktivitas Terbaru
+
+</h2>
+
+
+<div class="activity-card">
+
+<div class="activity-icon">
+
+✅
+
+</div>
+
+<div>
+
+<h3>
+
+Materi Tajwid Dasar telah diselesaikan
+
+</h3>
+
+<p>
+
+2 jam yang lalu
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="activity-card">
+
+<div class="activity-icon">
+
+📖
+
+</div>
+
+<div>
+
+<h3>
+
+Memulai program Tahfizh Al-Qur'an
+
+</h3>
+
+<p>
+
+Kemarin
+
+</p>
+
+</div>
+
+</div>
+
+
+
+<div class="activity-card">
+
+<div class="activity-icon">
+
+🏆
+
+</div>
+
+<div>
+
+<h3>
+
+Menyelesaikan 25 materi pembelajaran
+
+</h3>
+
+<p>
+
+3 hari yang lalu
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- STREAK BELAJAR -->
+
+<section class="dashboard-section">
+
+<h2>
+
+🔥 Konsistensi Belajar
+
+</h2>
+
+<div class="streak-card">
+
+<h1>
+
+15 Hari
+
+</h1>
+
+<p>
+
+Alhamdulillah, Anda telah belajar selama 15 hari berturut-turut.
+
+</p>
+
+</div>
+
+</section>
+
+  <!-- BADGE PRESTASI -->
+
+<section class="dashboard-section">
+
+<h2>
+
+🏅 Badge Prestasi
+
+</h2>
+
+<div class="badge-grid">
+
+
+<div class="badge-card">
+
+<div class="badge-icon">
+
+📖
+
+</div>
+
+<h3>
+
+Pecinta Al-Qur'an
+
+</h3>
+
+<p>
+
+Menyelesaikan 10 materi.
+
+</p>
+
+</div>
+
+
+<div class="badge-card">
+
+<div class="badge-icon">
+
+🔥
+
+</div>
+
+<h3>
+
+Istiqamah
+
+</h3>
+
+<p>
+
+Belajar 15 hari berturut-turut.
+
+</p>
+
+</div>
+
+
+<div class="badge-card">
+
+<div class="badge-icon">
+
+🏆
+
+</div>
+
+<h3>
+
+Pelajar Aktif
+
+</h3>
+
+<p>
+
+Mengikuti 3 program pembelajaran.
+
+</p>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+
+<!-- MATERI TERAKHIR -->
+
+<section class="dashboard-section">
+
+<h2>
+
+📚 Materi Terakhir Dipelajari
+
+</h2>
+
+<div class="activity-card">
+
+<div class="activity-icon">
+
+📘
+
+</div>
+
+<div>
+
+<h3>
+
+Makharijul Huruf Bagian 3
+
+</h3>
+
+<p>
+
+Terakhir dibuka 1 jam yang lalu.
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- PROFIL PESERTA -->
+
+<section class="dashboard-section">
+
+<h2>
+
+👤 Profil Peserta
+
+</h2>
+
+<div class="profile-card">
+
+<div class="profile-avatar">
+
+A
+
+</div>
+
+<div>
+
+<h3>
+
+Ahmad Abdullah
+
+</h3>
+
+<p>
+
+Peserta Go For Al-Qur'an
+
+<br><br>
+
+Program aktif:
+
+Tahsin Dasar • Tahfizh • Bahasa Arab
+
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- FOOTER -->
+
+<footer class="dashboard-footer">
+
+<p>
+
+© 2026 Go For Al-Qur'an
+
+<br><br>
+
+Belajar • Paham • Amalkan
+
+</p>
+
+</footer>
+
+
+
+</main>
+
+</div>
+
+</body>
+
+</html>
