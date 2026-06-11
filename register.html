@@ -331,7 +331,9 @@ Buat Akun
 
 </h2>
 
-<form>
+<form method="POST" action="{{ route('register') }}">
+
+@csrf
 
 <div class="input-group">
 
@@ -344,6 +346,94 @@ Nama Lengkap
 <input
 type="text"
 placeholder="Nama lengkap">
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Nomor WhatsApp
+
+</label>
+
+<input
+type="text"
+placeholder="08xxxxxxxxxx">
+
+</div>
+
+  <div class="input-group">
+
+<label>
+
+Jenis Kelamin
+
+</label>
+
+<div class="gender-group">
+
+<label class="gender-option">
+
+<input
+type="radio"
+name="gender"
+value="ikhwan">
+
+<span>
+
+Ikhwan
+
+</span>
+
+</label>
+
+
+<label class="gender-option">
+
+<input
+type="radio"
+name="gender"
+value="akhwat">
+
+<span>
+
+Akhwat
+
+</span>
+
+</label>
+
+</div>
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Tanggal Lahir
+
+</label>
+
+<input
+type="date"
+name="birth_date">
+
+</div>
+
+  <div class="input-group">
+
+<label>
+
+Kota Domisili
+
+</label>
+
+<input
+type="text"
+name="city"
+placeholder="Contoh: Jakarta, Bandung, Surabaya">
 
 </div>
 
@@ -363,19 +453,7 @@ placeholder="email@gmail.com">
 </div>
 
 
-<div class="input-group">
 
-<label>
-
-Nomor WhatsApp
-
-</label>
-
-<input
-type="text"
-placeholder="08xxxxxxxxxx">
-
-</div>
   
 
 <div class="input-group">
